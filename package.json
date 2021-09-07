@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/chanalisa/easypost/issues"
   },
-  "homepage": "https://github.com/chanalisa/easypost#readme"
+  "homepage": "https://github.com/chanalisa/easypost#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
