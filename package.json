@@ -1,0 +1,20 @@
+{
+  "name": "easypost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanalisa/easypost.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanalisa/easypost/issues"
+  },
+  "homepage": "https://github.com/chanalisa/easypost#readme"
+}
