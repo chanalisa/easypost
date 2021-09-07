@@ -9,3 +9,7 @@ body {
   font-family: "Rubik";
   color: #002D5B;
   font-weight: 400; }
+
+.heading {
+  font-size: 7rem;
+  text-align: center; }
