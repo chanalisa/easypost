@@ -1,0 +1,9 @@
+/* @content: a directive that allows @mixin to take blocks of style wherever it is used */
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+      // 600px
+      @media (max-width: 37.5em) {
+        @content;
+      }
+    }
+}

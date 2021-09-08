@@ -37,4 +37,10 @@
         }
 
     }
+
+    .row .col-1-of-2 {
+        @include respond(phone) {
+            width: calc(100% - #{$gutter-horizontal});
+        }
+    }
 }

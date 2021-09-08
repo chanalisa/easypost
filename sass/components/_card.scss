@@ -8,6 +8,10 @@
     &__logo-headline {
         display: flex;
         align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
 
     &__content-source {

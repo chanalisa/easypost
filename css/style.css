@@ -1,3 +1,4 @@
+/* @content: a directive that allows @mixin to take blocks of style wherever it is used */
 html {
   font-size: 62.5%; }
 
@@ -14,6 +15,9 @@ body {
   font-size: 6rem;
   font-weight: 300;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .heading {
+      font-size: 5rem; } }
 
 .carousel {
   max-width: 114rem;
@@ -43,6 +47,9 @@ body {
           width: 4rem;
           background: #f4f3ed;
           margin-left: 12px; }
+  @media (max-width: 37.5em) {
+    .carousel .row .col-1-of-2 {
+      width: calc(100% - 6rem); } }
 
 .card {
   background-color: #f4f3ed;
@@ -53,6 +60,9 @@ body {
   .card__logo-headline {
     display: flex;
     align-items: center; }
+    @media (max-width: 37.5em) {
+      .card__logo-headline {
+        flex-direction: column; } }
   .card__content-source {
     font-size: 1.5rem;
     font-style: italic;
@@ -79,9 +89,18 @@ body {
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 37.5em) {
+        .row [class^='col-']:not(:last-child) {
+          margin-right: 0; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
+    @media (max-width: 37.5em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
+    @media (max-width: 37.5em) {
+      .row .col-1-of-3 {
+        width: 100%; } }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
