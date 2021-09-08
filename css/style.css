@@ -22,8 +22,14 @@ body {
   background-color: #f4f3ed;
   padding: 2rem 4rem;
   font-size: 2rem;
-  font-weight: 700;
-  height: auto; }
+  font-weight: 700; }
+  .card__logo-headline {
+    display: flex;
+    align-items: center; }
+  .card__content-source {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #899da3; }
 
 .row {
   overflow: auto; }
