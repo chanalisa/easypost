@@ -12,6 +12,7 @@ body {
 
 .heading {
   font-size: 6rem;
+  font-weight: 300;
   text-align: center; }
 
 .carousel {
@@ -35,7 +36,17 @@ body {
     float: right; }
     .card__content-link a {
       text-transform: uppercase;
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      text-decoration: none;
+      position: relative; }
+      .card__content-link a:after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        border-width: 0 0 1px;
+        border-style: solid; }
 
 .row {
   overflow: auto; }

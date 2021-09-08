@@ -22,6 +22,19 @@
         a {
             text-transform: uppercase;
             font-size: 1.25rem;
+            text-decoration: none;
+            position: relative;
+
+            // ::after pseudo-element used to increase space between text and underline
+            &:after {
+                content: '';
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                border-width: 0 0 1px;
+                border-style: solid;
+            }
         }
     }
 }
