@@ -1,4 +1,40 @@
 .carousel {
     max-width: 114rem;
     margin: 0 auto;
+
+    &-nav {
+        text-align: center;
+        margin: $gutter-vertical auto;
+
+        ol {
+            padding: 0;
+
+            li {
+                position: relative;
+                display: inline-block;
+                list-style-type: none;
+                height: 0.5rem;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: calc(100% + 1px);
+                    bottom: 0;
+                    width: 12px;
+                    height: 12px;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    background: $color-primary;
+                }
+
+                &:not(:first-child) {
+                    width: 4rem;
+                    background: $color-grey;
+                    margin-left: 12px;
+                }
+            }
+        }
+
+    }
 }

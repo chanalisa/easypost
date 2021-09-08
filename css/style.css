@@ -18,6 +18,31 @@ body {
 .carousel {
   max-width: 114rem;
   margin: 0 auto; }
+  .carousel-nav {
+    text-align: center;
+    margin: 8rem auto; }
+    .carousel-nav ol {
+      padding: 0; }
+      .carousel-nav ol li {
+        position: relative;
+        display: inline-block;
+        list-style-type: none;
+        height: 0.5rem; }
+        .carousel-nav ol li:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 1px);
+          bottom: 0;
+          width: 12px;
+          height: 12px;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background: #002d5b; }
+        .carousel-nav ol li:not(:first-child) {
+          width: 4rem;
+          background: #f4f3ed;
+          margin-left: 12px; }
 
 .card {
   background-color: #f4f3ed;
