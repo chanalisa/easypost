@@ -3,6 +3,7 @@
     padding: 2rem 4rem;
     font-size: 2rem;
     font-weight: 700;
+    line-height: 3rem;
 
     &__logo-headline {
         display: flex;
@@ -13,5 +14,14 @@
         font-size: 1.5rem;
         font-style: italic;
         color: $color-grey-dark;
+    }
+
+    &__content-link {
+        float: right;
+
+        a {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+        }
     }
 }
