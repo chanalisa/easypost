@@ -7,9 +7,33 @@ body {
 
 body {
   font-family: "Rubik";
-  color: #002D5B;
+  color: #002d5b;
   font-weight: 400; }
 
 .heading {
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center; }
+
+.carousel {
+  max-width: 114rem;
+  margin: 0 auto; }
+
+.card {
+  background-color: #f4f3ed;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  height: auto; }
+
+.row {
+  overflow: auto; }
+  .row [class^='col-'] {
+    float: left; }
+    .row [class^='col-']:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
