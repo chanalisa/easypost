@@ -13,17 +13,19 @@
         ol {
             padding: 0;
 
+            // carousel nav line
             li {
                 position: relative;
                 display: inline-block;
                 list-style-type: none;
                 height: 0.5rem;
 
+                // carousel nav dot
                 &:after {
                     content: '';
                     position: absolute;
                     top: 50%;
-                    left: calc(100% + 1px);
+                    left: calc(100% + 0px);
                     bottom: 0;
                     width: 12px;
                     height: 12px;
