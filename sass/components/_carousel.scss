@@ -2,6 +2,10 @@
     max-width: 114rem;
     margin: 0 auto;
 
+    @include respond(phone) {
+        max-width: none;
+    }
+    
     &-nav {
         text-align: center;
         margin: $gutter-vertical auto;
