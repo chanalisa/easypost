@@ -65,7 +65,7 @@ body {
   line-height: 3rem; }
   @media (max-width: 37.5em) {
     .card {
-      width: 100%; } }
+      width: calc(100% - 2rem); } }
   .card .logo-headline {
     display: flex;
     align-items: center; }
@@ -122,9 +122,6 @@ body {
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 37.5em) {
-        .row [class^='col-']:not(:last-child) {
-          margin-right: 3rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
     @media (max-width: 37.5em) {

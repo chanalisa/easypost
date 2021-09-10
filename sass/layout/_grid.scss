@@ -7,9 +7,9 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(phone) {
-                margin-right: $spacing-small;
-            }
+            // @include respond(phone) {
+            //     margin-right: $spacing-small;
+            // }
         }
     }
 
