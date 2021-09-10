@@ -5,6 +5,9 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem; }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 1.5rem; } }
 
 body {
   font-family: "Rubik";
@@ -71,14 +74,14 @@ body {
         flex-direction: column;
         align-items: flex-start; } }
     .card .logo-headline img {
-      width: calc((100% - 2 * 2rem) / 3);
-      margin-right: 2rem; }
+      width: calc((100% - 2 * 3rem) / 3);
+      margin-right: 3rem; }
       @media (max-width: 37.5em) {
         .card .logo-headline img {
           width: 75%;
           margin: 0 auto; } }
     .card .logo-headline .headline {
-      width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+      width: calc(2 * ((100% - 2 * 3rem) / 3) + 3rem); }
       @media (max-width: 37.5em) {
         .card .logo-headline .headline {
           width: 100%; } }
@@ -86,10 +89,10 @@ body {
     font-size: 1.5rem;
     font-style: italic;
     color: #899da3;
-    margin-left: calc(((100% - 2 * 2rem) / 3) + 2rem); }
+    margin-left: calc(((100% - 2 * 3rem) / 3) + 3rem); }
     @media (max-width: 37.5em) {
       .card .content-source {
-        margin: 2rem 0; } }
+        margin: 3rem 0; } }
   .card .content-link {
     float: right; }
     .card .content-link a {
@@ -109,20 +112,26 @@ body {
       .card .content-link {
         float: none;
         text-align: center;
-        padding-bottom: 2rem; } }
+        padding-bottom: 3rem; } }
 
 .row {
   display: flex;
-  overflow: auto; }
+  overflow: auto;
+  justify-content: space-between; }
   .row [class^='col-'] {
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
       @media (max-width: 37.5em) {
         .row [class^='col-']:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 3rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
+    @media (max-width: 37.5em) {
+      .row .col-1-of-2 {
+        width: 100%;
+        flex: none;
+        justify-content: flex-end; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
     @media (max-width: 37.5em) {
