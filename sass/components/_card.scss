@@ -5,22 +5,50 @@
     font-weight: 700;
     line-height: 3rem;
 
-    &__logo-headline {
+    @include respond(phone) {
+        width: 90%;
+    }
+
+    .logo-headline {
         display: flex;
         align-items: center;
 
         @include respond(phone) {
             flex-direction: column;
+            align-items: flex-start;
+        }
+
+        img {
+            width: calc((100% - 2 * #{$spacing-small}) / 3);
+            margin-right: $spacing-small;
+
+            @include respond(phone) {
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+
+        .headline {
+            width: calc(2 * ((100% - 2 * #{$spacing-small}) / 3) + #{$spacing-small});
+
+            @include respond(phone) {
+                width: 100%;
+            }
         }
     }
 
-    &__content-source {
+    .content-source {
         font-size: 1.5rem;
         font-style: italic;
         color: $color-grey-dark;
+        margin-left: calc(((100% - 2 * #{$spacing-small}) / 3) + #{$spacing-small});
+
+        @include respond(phone) {
+            margin: $spacing-small 0;
+        }
     }
 
-    &__content-link {
+    .content-link {
         float: right;
 
         a {
@@ -39,6 +67,12 @@
                 border-width: 0 0 1px;
                 border-style: solid;
             }
+        }
+
+        @include respond(phone) {
+            float: none;
+            text-align: center;
+            padding-bottom: $spacing-small;
         }
     }
 }
