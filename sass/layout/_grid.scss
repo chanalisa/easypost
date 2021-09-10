@@ -7,15 +7,14 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            // @include respond(phone) {
-            //     margin-right: $spacing-small;
-            // }
+            @include respond(phone) {
+                margin-right: $spacing-small;
+            }
         }
     }
 
     display: flex;
     overflow: auto;
-    justify-content: space-between;
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
@@ -23,7 +22,6 @@
         @include respond(phone) {
             width: 100%;
             flex: none;
-            justify-content: flex-end;
         }
     }
 

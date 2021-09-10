@@ -94,7 +94,7 @@ body {
       .card .content-source {
         margin: 3rem 0; } }
   .card .content-link {
-    float: right; }
+    text-align: end; }
     .card .content-link a {
       text-transform: uppercase;
       font-size: 1.25rem;
@@ -116,19 +116,20 @@ body {
 
 .row {
   display: flex;
-  overflow: auto;
-  justify-content: space-between; }
+  overflow: auto; }
   .row [class^='col-'] {
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 37.5em) {
+        .row [class^='col-']:not(:last-child) {
+          margin-right: 3rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
     @media (max-width: 37.5em) {
       .row .col-1-of-2 {
         width: 100%;
-        flex: none;
-        justify-content: flex-end; } }
+        flex: none; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
     @media (max-width: 37.5em) {
